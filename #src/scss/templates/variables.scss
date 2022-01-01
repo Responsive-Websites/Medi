@@ -1,0 +1,74 @@
+// colors
+$baseColor: #4fbfa5;
+$subColor: #00868a;
+$whiteColor: #ffffff;
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 150%;
+  color: $subColor;
+  font-weight: 700;
+  @media screen and (max-width: 992px) {
+    font-size: 38px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 33px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+  }
+}
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+  @media screen and (max-width: 992px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 23px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+
+//button
+@mixin button($backgroundColor, $backgroundColorHover, $fontColor, $fontColorHover) {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122.2%;
+  min-height: 41px;
+  color: $fontColor;
+  background-color: $backgroundColor;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 0px 15px;
+
+  transition: 0.2s;
+  &:hover {
+    background-color: $backgroundColorHover;
+    color: $fontColorHover;
+  }
+  & span {
+    color: inherit;
+  }
+}
