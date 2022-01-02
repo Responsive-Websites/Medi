@@ -151,6 +151,7 @@
   min-height: 90px;
   display: flex;
   align-items: center;
+  padding-left: 18px;
   &__button {
     @include button($subColor, $baseColor, $whiteColor, $whiteColor);
     text-transform: uppercase;

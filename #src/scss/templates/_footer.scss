@@ -1,0 +1,125 @@
+.footer {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    @media screen and (max-width: 1159px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__copyright {
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding: 20px 20px 20px 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    @media screen and (max-width: 1333px) {
+      padding: 10px 10px 10px 15px;
+    }
+    @media screen and (max-width: 1159px) {
+      flex: 1 1 100%;
+      border-right: none;
+      border-left: none;
+    }
+    @media screen and (max-width: 589px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 310px;
+    color: #000000;
+    margin-right: 30px;
+    @media screen and (max-width: 589px) {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+    }
+  }
+  &__agree {
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000;
+    margin-right: 60px;
+    @media screen and (max-width: 1333px) {
+      margin-right: 10px;
+    }
+    @media screen and (max-width: 589px) {
+      flex: 1 1 100%;
+    }
+  }
+  &__map {
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e2e2e2;
+    @media screen and (max-width: 1159px) {
+      flex: 1 1 100%;
+      border-top: none;
+    }
+    @media screen and (max-width: 629px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__blind {
+    margin-left: 9px;
+    @media screen and (max-width: 629px) {
+      flex: 1 1 100%;
+      width: 100%;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  }
+  &__icons {
+    @media screen and (max-width: 629px) {
+      flex: 1 1 100%;
+    }
+  }
+}
+.blind {
+  @media screen and (max-width: 1159px) {
+    margin-left: 0px;
+  }
+  &__button {
+    @media screen and (max-width: 629px) {
+      width: 100%;
+    }
+  }
+}
+
+.icons {
+  &__inner {
+    @media screen and (max-width: 629px) {
+      justify-content: center;
+    }
+  }
+  &__icon {
+    @media screen and (max-width: 1329px) {
+      min-height: 60px;
+      &:last-child {
+        border-right: none;
+      }
+      &:first-child {
+        border-left: none;
+      }
+      & img {
+        width: 24px;
+        margin: 0px 18px;
+      }
+    }
+    @media screen and (max-width: 629px) {
+      border-right: none;
+      border-left: none;
+    }
+  }
+}
