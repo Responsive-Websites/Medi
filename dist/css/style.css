@@ -842,7 +842,7 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  background-position: right 10px bottom 10%;
+  background-position: right 10px bottom 1px;
 }
 
 .about__benefits {
